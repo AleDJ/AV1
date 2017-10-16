@@ -97,22 +97,23 @@ $black:  #000 !default;
 $red:    #d9534f !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
-$green:  #5cb85c !default;
+$green:  #36b57c !default;
 $blue:   #0275d8 !default;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
+$azulturquesa: #41a2ef;
 
 // Create grayscale
 $gray-dark:                 #292b2c !default;
-$gray:                      #464a4c !default;
+$gray:                      #606060 !default;
 $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
-$brand-success:             $green !default;
+$brand-primary:             $green !default;
+$brand-success:             $azulturquesa !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
 $brand-danger:              $red !default;
@@ -373,7 +374,7 @@ $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
 $btn-secondary-bg:               $white !default;
-$btn-secondary-border:           #ccc !default;
+$btn-secondary-border:           $white !default;
 
 $btn-info-color:                 $white !default;
 $btn-info-bg:                    $brand-info !default;
@@ -920,10 +921,10 @@ $carousel-control-color:                      $white !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 
-$carousel-indicator-width:                    30px !default;
-$carousel-indicator-height:                   3px !default;
+$carousel-indicator-width:                    10px !default;
+$carousel-indicator-height:                   10px !default;
 $carousel-indicator-spacer:                   3px !default;
-$carousel-indicator-active-bg:                $white !default;
+$carousel-indicator-active-bg:                $gray !default;
 
 $carousel-caption-width:                      70% !default;
 $carousel-caption-color:                      $white !default;

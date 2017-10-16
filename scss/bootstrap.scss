@@ -33,7 +33,6 @@
 @import "nav";
 @import "navbar";
 @import "card";
-@import "breadcrumb";
 @import "pagination";
 @import "badge";
 @import "jumbotron";
@@ -46,9 +45,13 @@
 
 // Components w/ JavaScript
 @import "modal";
-@import "tooltip";
 @import "popover";
 @import "carousel";
 
 // Utility classes
 @import "utilities";
+
+// CSS da Alexandra
+@import "estilo1";
+@import "cabecalho";
+@import "video";
