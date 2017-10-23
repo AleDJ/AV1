@@ -4,26 +4,45 @@
 	<title>Meu App</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-
+ <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Alexandra\Desktop\AV1-master\scss\bootstrap.css">-->
 </head>
 
 <body class="animated fadeIn" id="top">
+  <a href="#top" class="back-to-top scrolling">Back to Top</a>
 
-<div class="row">
-  <div class="col-md-6 text-right">
-    <img src="imagens/logo.png">
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix">
+  <div class="container">
+    <div class="navbar-header scrolling">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-colllapse-1">
+        <span class="sr-only">Toggle navigation</span>
+          Menu
+          <i class="fa fa-bars"></i>
+      </button>
+      <a href="#top" class="navbar-brand img-logo scrolling" title="Onetouch Mobile App Landing Page Template">
+        <img src="imagens/logo.png">
+      </a>
   </div>
-  <div class="col-md-6 text-right">
-		<nav class="nav">
-		  <a class="nav-link active" href="#header">Download</a>
-		  <a class="nav-link" href="#features">Features</a>
-		  <a class="nav-link" href="#video">Video</a>
-		  <a class="nav-link" href="#about-us">About us</a>
-		  <a class="nav-link" href="#contact">Contact</a>
-		</nav>
+  <div class="collapse navbar-collapse id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav navbar-right">
+      <li class="active">
+		    <a class="scrolling" href="#header">DOWNLOAD</a>
+      </li>
+      <li>
+		    <a class="scrolling" href="#features">FEATURES</a>
+      </li>
+      <li>
+		    <a class="scrolling" href="#video">VIDEO</a>
+      </li>
+      <li>
+		    <a class="scrolling" href="#about-us">ABOUT US</a>
+      </li>
+      <li>
+		    <a class="scrolling" href="#contact">CONTACT</a>
+      </li>
+		</ul>
   </div>
 </div>
+</nav>
 
 <div class="cabecalho">
   <div class="container">
@@ -34,8 +53,18 @@
   		<div class="col-md-6">
         <h1 class="display-4">Mobile App Landing Page</h1>
         <p>$18.99 - download Onetouch mobile app and prepare for having a lot of fun communicating with your team</p>
-        <button type="button" class="btn btn-outline-secondary">Google Store</button>
-        <button type="button" class="btn btn-outline-secondary">Apple Store</button>
+        <div class="header-button">
+          <a class="btn btn-outline-secondary" href="#">
+            <span class="google-icons"></span>
+              <img src="icon/play.png">
+              Google Store
+          </a>
+          <a class="btn btn-outline-secondary" href="#">
+            <span class="google-icons"></span>
+              <img src="icon/apple.png">
+              Apple Store
+        </a>
+        </div>
   		</div>
   	</div>
   </div>
@@ -43,7 +72,7 @@
 
 
 <div class="texto">
-  <div class="jumbotron">
+  <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <div id="carrossel-testemunhos" class="carousel slide" data-ride="carousel" data-interval="7000">
@@ -100,10 +129,11 @@
       	<p>Onetouch was built to help small and large teams with their communication and collaboration processes, improving management capabilities while enabling its users to focus on meeting the project's objectives. Check out the features:</p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 espaco">
         <div class="col-xs-12">
           <div class="features-box top">
             <span class="icon-telescope features-icons">
+              <img src="icon/telescopio.png">
             </span>
             <div class="features-text">
               <h3>Deadline Estimation</h3>
@@ -115,6 +145,7 @@
       <div class="col-xs-12">
         <div class="features-box">
           <span class="icon-hotairballon features-icons">
+            <img src="icon/balao.png">
           </span>
           <div class="features-text">
             <h3>Great Scalability</h3>
@@ -126,6 +157,7 @@
       <div class="col-xs-12">
         <div class="features-box">
           <span class="icon-lock features-icons">
+            <img src="icon/cadeado.png">
           </span>
           <div class="features-text">
             <h3>Managent</h3>
@@ -136,9 +168,9 @@
     </div>
 
     <div class="col-xs-12 col-md-12-4 text-center">
-      <div id="carrossel-telas" class="carousel slide" data-ride="carousel">
+      <div id="carrossel-telas" class="carousel slide text-center" data-ride="carousel">
         
-        <div class="carousel-inner">
+        <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
             <img class="d-block w-100" src="imagens/cel1.png" alt="First slide">
           </div>
@@ -158,7 +190,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <ol class="carousel-indicators center-block">
+      <ol class="carousel-indicators">
           <li data-target="#carrossel-telas" data-slide-to="0" class="active"></li>
           <li data-target="#carrossel-telas" data-slide-to="1"></li>
           <li data-target="#carrossel-telas" data-slide-to="2"></li>
@@ -166,10 +198,11 @@
 
     </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 espaco">
         <div class="col-xs-12">
           <div class="features-box top">
             <span class="icon-tools features-icons">
+              <img src="icon/lapis.png">
             </span>
             <div class="features-text">
               <h3>Language Options</h3>
@@ -181,6 +214,7 @@
         <div class="col-xs-12">
           <div class="features-box">
             <span class="icon-tools-2 features-icons">
+              <img src="icon/tools.png">
             </span>
             <div class="features-text">
               <h3>Devices Integration</h3>
@@ -191,7 +225,8 @@
 
         <div class="col-xs-12">
           <div class="features-box">
-            <span class="icon-ribbon features-icons">
+            <span class="icon-ribbon features-icons" >
+              <img src="icon/marcador.png">
             </span>
             <div class="features-text">
               <h3>Continuous Updates</h3>
@@ -220,8 +255,8 @@
       	<h2>The Perfect App To Improve Your Team's Productivity</h2>
       	<p>We've built Onetouch with a very precise mission which is to help both managers and team members communicate and work together better. </p>
         <p>We enjoy creating solutions that bring people together with the help of technology.</p>
-        <div class="text-center">
-      		<a href="#insert-your-link" class="btn btn-primary">Read more</a>
+        <div class="text-left">
+      		<a href="#" class="button-small-solid scrolling">Read more</a>
       	</div>
       </div>
     </div>
@@ -234,19 +269,19 @@
 
     <div class="col-md-6 col-md-pull-6 col-lg-5 col-lg-pull-7">
       <ul class="nav nav-pills">
-        <li class="">
+        <li class="active">
           <a href="#tab_a" data-toggle="tab" class="btn btn-secondary">Dashboard</a>
         </li>
         <li class="">
           <a href="#tab_b" data-toggle="tab" class="btn btn-secondary">Statistics</a>
         </li>
-        <li class="active">
+        <li class="">
           <a href="#tab_c" data-toggle="tab" class="btn btn-secondary">Support</a>
         </li>
       </ul>
 
       <div class="tab-content">
-        <div class="tab-pane active" id="tab_a">
+        <div class="tab-pane fade active in" id="tab_a">
           <p>Onetouch is the right mobile application for project and team management. Download it today and notice how:</p>
           <ul>
       		  <li>
@@ -262,8 +297,8 @@
                 Objectives are met daily and you are in control
             </li>
       		</ul>
-          <div class="text-center">
-            <a class="btn btn-primary" href="#about-us">About US</a>
+          <div class="text-left">
+            <a class="button-small-solid scrolling" href="#about-us">About US</a>
           </div>
         </div>
 
@@ -280,11 +315,11 @@
         		</div>
         </div>
 
-        <div class="tab-pane fade active in" id="tab_c">
+        <div class="tab-pane fade" id="tab_c">
           <p>We are proud about the community we've created around Onetouch and we'll continue to invest significant resources in it's development.</p>
           <p>When you download Onetouch you also get access to our extensive knowledge base containing updated written articles and easy to follow video tutorials.</p>
-        	<div class="text-center">
-        	   <a href="#header" class="btn btn-primary">Download</a>
+        	<div class="text-left">
+        	   <a href="#header" class="button-small-solid scrolling">Download</a>
         	</div>
         </div>
       </div>
@@ -299,8 +334,8 @@
 
 <div id="video">
   <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-10 text-center">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-center">
         <div class="embed-responsive embed-responsive-16by9 center-block">
           <iframe src="https://www.youtube.com/embed/Ey1lkwYGSC0" allowfullscreen>
             
@@ -318,56 +353,57 @@
       <div class="col-md-12 text-center">
         <h1>ABOUT US</h1>
         <p class="sub-heading">
-        "We're a young and determined company built by a professional and enthusiastic team, driven by our customers' success stories. Although we come from different backgrounds and have very different skill sets as individuals, as a team we're united by the same goal and we're always relying on each other's expertise."</p>
-        <img class="col-md-10 col-md-offset-1 text-center" src="imagens/sobre.jpg" alt="about">
+        We're a young and determined company built by a professional and enthusiastic team, driven by our customers' success stories. Although we come from different backgrounds and have very different skill sets as individuals, as a team we're united by the same goal and we're always relying on each other's expertise.</p>
+        <img class="img-responsive img-rounded about-image center-block" src="imagens/sobre.jpg" alt="about">
         <h2>You can also checkout some of the other mobile apps in our portfolio</h2>
       </div>
+      <div class="development-process text-center">
         <div class="col-md-3">
-          <img class="img-fluid" src="imagens/img1.jpg">
+          <img class="img-responsive center-block" src="imagens/img1.jpg">
           <div class="text-div">
             <h5 class="box-title text-center">FMCG Marketing</h5>
             <p>Consumer marketing application developed to launch, manage and evaluate consumer goods marketing campaigns.</p>
           </div>
           <div class="text-center">
-            <a class="btn btn-primary" href="#">See Details</a>
+            <a class="button-small-solid scrolling" href="#">See Details</a>
           </div>
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="imagens/img2.jpg">
+          <img class="img-responsive center-block" src="imagens/img2.jpg">
           <div class="text-div">
             <h5 class="box-title text-center">Distribution Manager</h5>
             <p>Application designed to increase the speed and accuracy of your warehouse operations to keep costs and losses at a minimum.</p>
           </div>
           <div class="text-center">
-            <a class="btn btn-primary" href="#">See Details</a>
+            <a class="button-small-solid scrolling" href="#">See Details</a>
           </div>
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="imagens/img3.jpg">
+          <img class="img-responsive center-block" src="imagens/img3.jpg">
           <div class="text-div">
             <h5 class="box-title text-center">Traceability</h5>
             <p>Software built to keep track of your product assembly status and optimize investments in research and development.</p>
           </div>
           <div class="text-center">
-            <a class="btn btn-primary" href="#">See Details</a>
+            <a class="button-small-solid scrolling" href="#">See Details</a>
           </div>
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" src="imagens/img4.jpg">
+          <img class="img-responsive center-block" src="imagens/img4.jpg">
           <div class="text-div">
             <h5 class="box-title text-center">Status Reports</h5>
             <p>As the name suggest, Status Reports mobile app focuses on generating business reports based on user collected data.</p>
           </div>
           <div class="text-center">
-            <a class="btn btn-primary" href="#">See Details</a>
+            <a class="button-small-solid scrolling" href="#">See Details</a>
           </div>
         </div>
     </div>
   </div>
 </div>
+</div>
 
 <div id="newsletter">
-  <div class="jumbotron">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -376,7 +412,7 @@
             <form id="NewsletterForm" data-toggle="validator" novidade="true">
               <div class="form-group">
                 <input type="email" class="form-control" id="nemail" placeholder="Your Email" required>
-                <button type="submit" class="btn btn-primary">Sign Me Up</button>
+                <button type="submit" class="button-small-solid disabled">Sign Me Up</button>
               </div>
               <div class="text-center">
                 <div id="nmsgSubmit" class="h3 text-center hidden"></div>
@@ -400,7 +436,7 @@
         <div class="img-fluid">
           <img src="imagens/pessoa1.png">
           <p class="center-block">
-            "Melissa Craig"
+            Melissa Craig
             <br>
             <span class="job-title">MANAGER</span>
           </p>
@@ -411,7 +447,7 @@
         <div class="img-fluid ">
           <img src="imagens/pessoa2.png">
           <p class="center-block">
-            "Tom Brokerage"
+            Tom Brokerage
             <br>
             <span class="job-title">SALES</span>
           </p>
@@ -422,7 +458,7 @@
         <div class="img-fluid">
           <img src="imagens/pessoa3.png">
           <p class="center-block">
-            "Rev Dunhill"
+            Rev Dunhill
             <br>
             <span class="job-title">DEVELOPER</span>
           </p>
@@ -433,14 +469,12 @@
         <div class="img-fluid">
           <img src="imagens/pessoa4.png">
           <p class="center-block">
-            "Miriam Stool"
+            Miriam Stool
             <br>
             <span class="job-title">DESIGNER</span>
           </p>
         </div>
       </div>
-       
-
     </div>
   </div>
 </div>
@@ -450,36 +484,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <a href="#insert-link-here">
-          <span class="icon-facebook">
-            
-          </span>
-        </a>
-        <a href="#insert-link-here">
-          <span class="icon-twitter">
-            
-          </span>
-        </a>
-        <a href="#insert-link-here">
-          <span class="icon-tumblr">
-            
-          </span>
-        </a>
-        <a href="#insert-link-here">
-          <span class="icon-dribbble">
-            
-          </span>
-        </a>
-        <a href="#insert-link-here">
-          <span class="icon-googleplus">
-            
-          </span>
-        </a>
-        <a href="#insert-link-here">
-          <span class="icon-linkedin">
-            
-          </span>
-        </a>
+        <a href="#"> <img class="icon-facebook" src="icon/facebook.png"></a>
+        <a href="#"> <img class="icon-twitter" src="icon/twitter.png"></a>
+        <a href="#"> <img class="icon-tumblr" src="icon/tumblr.png"></a>
+        <a href="#"> <img class="icon-dribble" src="icon/dribble.png"></a>
+        <a href="#"> <img class="icon-googleplus" src="icon/google.png"></a>
+        <a href="#"> <img class="icon-linkedin" src="icon/linkedin.png"></a>
       </div>
     </div>
   </div>
@@ -515,12 +525,12 @@
             </div>
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control id="cmessage" placeholder="Write your message here" rows="4" required></textarea>
+                <textarea class="form-control" id="cmessage" placeholder="Write your message here" rows="4" required></textarea>
               </div>
             </div>
             <div class="col-md-12">
               <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit Message</button>
+                <button type="submit" class="button-small-solid scrolling">Submit Message</button>
                 <div id="cmsgSubmit" class="h3 text-center hidden"></div>
               </div>
             </div>
@@ -532,27 +542,31 @@
             <li>
               <span class="location-item">
                 <span class="icon-map-pin location-icons">
+                  <img src="icon/localizacao.png">
                 </span>
-                  "11th Regent Street, Piccadilly, UK"
+                  11th Regent Street, Piccadilly, UK
               </span>
             </li>
             <li>
               <span class="location-item">
                 <span class="icon-phone location-icons">
+                  <img src="icon/smartphone.png">
                 </span>
-                  "+28 86 411 255"
+                  +28 86 411 255
               </span>
             </li>
             <li>
               <span class="location-item">
                 <span class="icon-phone location-icons">
+                  <img src="icon/smartphone.png">
                 </span>
-                  "+28 86 412 266"
+                  +28 86 412 266
               </span>
             </li>
             <li>
               <span class="location-item">
                 <span class="icon-envelope location-icons">
+                  <img src="icon/email.png">
                 </span>
                   <a href="#">contact@onetouch.com</a>
               </span>
@@ -560,6 +574,7 @@
             <li>
               <span class="location-item">
                 <span class="icon-global location-icons">
+                  <img src="icon/web.png">
                 </span>
                   <a href="#">www.onetouch.com</a>
               </span>
